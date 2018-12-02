@@ -11,7 +11,7 @@
 \setlength{\topmargin}{-1cm}
 \usepackage{scrpage2}
 \pagestyle{scrheadings}
-\ihead{code quality checking questionnaire}
+\ihead{code quality check - questionnaire}
 \ohead{\pagemark}
 \chead{}
 \cfoot{}
@@ -160,7 +160,7 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 % \Qitem{ \Qq{When was the script created?} Date on the script is \Qline{1.5cm}}
 
-\Qitem{\Qq{Contact details are provided (email, url, git)?} \Qtab{5.5cm}{\QO{} Yes
+\Qitem{\Qq{Contact details are provided (email, URL, git)?} \Qtab{5.5cm}{\QO{} Yes
 \hskip0.5cm \QO{} No}}
 
 \Qitem{\Qq{Date of development is listed?} \Qtab{5.5cm}{\QO{} Yes
@@ -169,14 +169,17 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \Qitem{ \Qq{Main purpose of the script is explained?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Needed input is defined?} \hskip0.4cm \QO{}
+\Qitem{ \Qq{Needed input is defined (format incl. which information are required, e.g. shp with column of type x and content of y)?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Output is defined?} \hskip0.4cm \QO{}
+\Qitem{ \Qq{Output is defined (incl. explanations, format etc.)?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{R version and R packages needed are listed?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem{ \Qq{Operating system used is listed or on which one it has been tested?} \hskip0.4cm \QO{}
+yes \hskip0.5cm \QO{} no }
 
 \Qitem{ \Qq{Required other software is explained?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
@@ -216,17 +219,26 @@ yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \section*{Actual Code for the Analysis}
 
+\Qitem{ \Qq{Data import is generic (no full paths, direct import possible)?} \Qtab{3cm}{yes \Qrating{5} no}}
+
 \Qitem{ \Qq{Well commented?} \Qtab{3cm}{horrible \Qrating{5} fantastic} remarks: \Qline{12cm}}
 
 \Qitem{ \Qq{Ratio of Comments vs. Code?} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
 
-\Qitem{ \Qq{The code can be redone without any fixes?} \hskip0.4cm \QO{}
+\Qitem{ \Qq{Easy to read (appropriate indentation and spacing)?} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+
+\Qitem{ \Qq{The script is written for generic data analysis?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem{ \Qq{Does the code require a rigid data structure? (e.g. specific column names in data.frame)?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} no, quite flexible }
+
+\Qitem{ \Qq{Is the code flexible? (i.e allows inputs of different data types)?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Data can be retrieved without contacting the author?}  \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Data import is generic (no full paths, direct import possible)?} \Qtab{3cm}{yes \Qrating{5} no}}
 
 \Qitem{\Qq{Code follows a logical structure?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
@@ -234,11 +246,27 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \Qitem{\Qq{Code only includes useful information?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
+\Qitem{\Qq{Are the variables derived within the code self-explanatory? (e.g. through clear variable names and/or comments)?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem{\Qq{Does the script uses a standard documentation structure/naming convention?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+
 \Qitem{\Qq{Script can be run easily on other data sets (generic code)?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{\Qq{Appropriate use of commands - no unnecessary detours?} \hskip0.4cm \QO{}
+\Qitem{\Qq{Appropriate use of commands - no unnecessary complex code snippets?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem{\Qq{(If a function) is provided: are example code/data provided/explained?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem[a]{ \Qq{Does the code minimize the storage of data (e.g. removal of unused variables)?)} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+
+\Qitem[a]{ \Qq{Does the code minimize the use of RAM? (e.g. appropriate subsetting, no re-reading data)?)} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+
+\Qitem[a]{ \Qq{Data handling and transformation is coherent and well commented?} \Qtab{3cm}{yes \Qrating{5} no}}
 
 \Qitem{ \Qq{Novel code not covered in the course is used?} \Qtab{3cm}{a lot \Qrating{5} just known commands}}
 
@@ -247,14 +275,25 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem[b]{ \Qq{Please describe what was special/interesting:} \Qlines{2} }
 
-\Qitem[a]{ \Qq{Script is fast (based on peformance measures)} \Qtab{3cm}{yes \Qrating{5} no}}
-
-\Qitem[b]{ \Qq{Which parts should be improved?} \Qlines{2} }
+\Qitem[a]{ \Qq{Script is fast (based on performance measures)} \Qtab{3cm}{yes \Qrating{5} no}}
 
 
-\Qitem[a]{ \Qq{Data handling and transformation is coherent and well commented?} \Qtab{3cm}{yes \Qrating{5} no}}
+\Qitem{ \Qq{The code can be executed without any fixes?} \hskip0.4cm \QO{}
+absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem[b]{ \Qq{What is missing?} \Qlines{2} }
+
+\Qitem[b]{ \Qq{Which parts should be improved?} \Qlines{3} }
+
+
+\Qitem[b]{ \Qq{What is missing?} \Qlines{3} }
+
+% #########################
+% #########################
+% #########################
+
+\bigskip
+
+\noindent\rule{12cm}{0.8pt}
 
 
 \section*{Graphs and Maps}
@@ -283,6 +322,14 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Maps include landmarks, cities, roads for orientation?}  \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+
+% #########################
+% #########################
+% #########################
+
+
+\noindent\rule{12cm}{0.8pt}
 
 
 \section*{Overall Impression}
@@ -324,7 +371,7 @@ So sorry.}}\par
 
 \Qitem{ \Qq{Please describe your impression.} \Qlines{3} }
 
-\Qitem{ \Qq{When you check your anticipated results/output (Q 13) at the beginning - where you expectations met? and if no, why not:} \Qlines{3} }
+\Qitem{ \Qq{When you check your anticipated results/output (Q 14) at the beginning - where you expectations met? and if no, why not:} \Qlines{3} }
 
 
 \Qitem{ \Qq{What do you especially like about this script:} \Qlines{5} }
