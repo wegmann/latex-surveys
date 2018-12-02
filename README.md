@@ -1,8 +1,5 @@
-# Latex Surveys
-Template for nicely formatted surveys in LaTeX.
+# Latex Code QA Survey
 
-Adapted for code QA questionnaire.
+Surveys in LaTeX for code quality analysis.
 
-This code was first authored by [Sven Hartenstein](www.svenhartenstein.de). I found it [here](http://www.svenhartenstein.de/creating-questionnaires-with-latex/) and thought it would be good to share on GitHub.
-
-Ideally, one should build a LaTeX package from this code (shouldn't be too difficult). 
+I found this nicely formated latex template [here](https://github.com/annerosenisser/latex-surveys).
