@@ -151,9 +151,9 @@
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 
-\section*{Script Meta-Information}
+\section*{Meta-Information}
 
-\Qitem{\Qq{A header with information exists at the beginning of the script?} \Qtab{5.5cm}{\QO{} Yes
+\Qitem{\Qq{Meta-information does exist?} \Qtab{5.5cm}{\QO{} Yes
 \hskip0.5cm \QO{} No}}
 
 \Qitem{ \Qq{Authors name}: \Qline{8cm} }
@@ -166,7 +166,7 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \Qitem{\Qq{Date of development is listed?} \Qtab{5.5cm}{\QO{} Yes
 \hskip0.5cm \QO{} No}}
 
-\Qitem{ \Qq{Main purpose of the script is explained?} \hskip0.4cm \QO{}
+\Qitem{ \Qq{Main purpose of the analysis is explained?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Needed input is defined (format incl. which information are required?}(e.g. shp with column of type x and content of y) \hskip0.4cm \QO{}
@@ -175,7 +175,7 @@ yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \Qitem{ \Qq{Output is defined?} (incl. explanations, format etc.) \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{R version and R packages needed are listed?} \hskip0.4cm \QO{}
+\Qitem{ \Qq{R version used and R packages needed are listed?} \hskip0.4cm \QO{}
 yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Operating system used is listed or on which one it has been tested?} \hskip0.4cm \QO{}
@@ -223,15 +223,15 @@ yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Well commented?} \Qtab{3cm}{horrible \Qrating{5} fantastic} remarks: \Qline{12cm}}
 
-\Qitem{ \Qq{Ratio of Comments vs. Code?} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+\Qitem{ \Qq{Ratio of Comments vs. Code is adequate?} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
 
 \Qitem{ \Qq{Easy to read?} (appropriate indentation and spacing) \Qtab{3cm}{horrible \Qrating{5} fantastic}}
 
 \Qitem{ \Qq{The script is written for generic data analysis?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Does the code require a rigid data structure?} (e.g. specific column names in data.frame) \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} no, quite flexible }
+\Qitem{ \Qq{Does the code require a rigid data structure?} (e.g. specific column names in data.frame) \hskip0.4cm \\ \QO{}
+absolutely \hskip0.5cm \QO{} no, quite flexible}
 
 \Qitem{ \Qq{Is the code flexible?} (i.e allows inputs of different data types) \hskip0.4cm \\
 \QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
@@ -243,17 +243,16 @@ absolutely \hskip0.5cm \QO{} no, quite flexible }
 \Qitem{\Qq{Code follows a logical structure?} \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{\Qq{Code only includes useful information?} \hskip0.4cm \QO{}
+\Qitem{\Qq{Analysis only includes relevant codes?} (no code output which is not used afterwards) \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{\Qq{Are the variables derived within the code self-explanatory?} (e.g. through clear variable names and/or comments) \hskip0.4cm \QO{}
+\Qitem{\Qq{Are the derived variables self-explanatory?} (e.g. through clear variable names and/or comments) \hskip0.4cm \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{\Qq{Does the script uses a standard documentation structure/naming convention?} \hskip0.4cm \\
+\Qitem{\Qq{A standard documentation structure/naming convention is applied?} \hskip0.4cm \\
 \QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-
-\Qitem{\Qq{Script can be run easily on other data sets (generic code)?} \hskip0.4cm \\
+\Qitem{\Qq{The analysis can be run easily on other data sets?}  (generic code) \hskip0.4cm \\
 \QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{Appropriate use of commands - no unnecessary complex code snippets?} \hskip0.4cm \\
@@ -272,7 +271,7 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Script is actually a package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
 
-\Qitem{ \Qq{Proper documentation (man pages) is provided for this package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+\Qitem{ \Qq{Proper documentation (manual pages) is provided for this package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
 
 \subsubsection*{Code Impression}
 
@@ -331,7 +330,7 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 
 % #########################
-% #########################
+% ######################### 
 % #########################
 
 \bigskip
@@ -351,21 +350,23 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \Qitem{ \Qq{Structure} \Qtab{3cm}{horrible \Qrating{5}
 fantastic}}
 
+\Qitem{ \Qq{Innovation} \Qtab{3cm}{horrible \Qrating{5}
+fantastic}}
+
 \bigskip
 
 \Qitem{ \Qq{Do you think it qualifies for being scientifically reproducible?}
 \begin{Qlist}
 \item yes
 \item no
-\item needs some more work
-\item details: \Qline{4cm}
+\item needs some more work: \Qline{8cm}
 \end{Qlist}
 }
 
 
 \bigskip
 
-\Qitem{\Qq{Is the script really worth the effort?} \Qtab{5.5cm}{\QO{} Yes, totally.
+\Qitem{\Qq{Is the code really worth the effort for you to check it out?} \\ \Qtab{5.5cm}{\QO{} Yes, totally.
 \hskip0.5cm \QO{} Probably not. \hskip0.5cm \QO{} Don't know.}}
 
 \Qitem{\Qq{Would you be interested to use this script for your analysis?}
@@ -376,7 +377,7 @@ fantastic}}
 \Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{No clue what is does. I just can't figure it out.}}\par
 }
 
-\Qitem{ \Qq{Please describe your impression.} \Qlines{3} }
+\Qitem{ \Qq{Please describe your impression:} \Qlines{3} }
 
 \Qitem{ \Qq{When you check your anticipated results/output (Q 14) at the beginning - are your expectations met? and if no, why not:} \Qlines{3} }
 
