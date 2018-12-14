@@ -118,7 +118,7 @@
 %% End of questionnaire command definitions %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \Qitem[b]{ \Qq{rating?} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+% \Qitem[b]{ \Qq{rating?} \Qtab{3cm}{could be improved \Qrating{5} fantastic}}
 % 
 % \Qitem{ \Qq{checkbox with field} \hskip0.4cm \QO{}
 % absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
@@ -204,10 +204,10 @@ yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 
 % \Qitem[d]{ \Qq{Input and Output definitions}\Qtab{2.5cm}{\parbox[t]{3.3cm}{\raggedleft
-% horrible}
+% could be improved}
 % \Qrating{7} \parbox[t]{3cm}{fantastic}}}
 % 
-% \Qitem[e]{ \Qq{xxx}\Qtab{2.5cm}{\parbox[t]{3.3cm}{\raggedleft horrible}
+% \Qitem[e]{ \Qq{xxx}\Qtab{2.5cm}{\parbox[t]{3.3cm}{\raggedleft could be improved}
 % \Qrating{7} \parbox[t]{3cm}{fantastic}}}
 
 % ############################
@@ -224,58 +224,59 @@ yes \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Data import is generic?} (no full paths, direct import possible) \Qtab{3cm}{yes \Qrating{5} no}}
 
-\Qitem{ \Qq{Well commented?} \Qtab{3cm}{horrible \Qrating{5} fantastic} remarks: \Qline{12cm}}
+\Qitem{ \Qq{Well commented?} \Qtab{3cm}{could be improved \Qrating{5} fantastic} remarks: \Qline{12cm}}
 
 \Qitem{ \Qq{Ratio of Comments vs. Code is adequate?} \Qtab{3cm}{no comments \Qrating{5} too many comments}}
 
-\Qitem{ \Qq{Easy to read?} (appropriate indentation and spacing) \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+\Qitem{ \Qq{Easy to read?} (appropriate indentation and spacing) \Qtab{3cm}{could be improved \Qrating{5} fantastic}}
 
 \Qitem{ \Qq{The code is written for generic data analysis?} (not just one specific data set can be used) \hskip0.4cm \\ \QO{}
 absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
+\Qitem{\Qq{The analysis can be run easily on other data sets?}  (generic code) \hskip0.4cm \\
+\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
+\Qitem{ \Qq{Is the code flexible?} (i.e allows inputs of different data types, e.g geoPackage instead of shp) \hskip0.4cm \\
+\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+
 \Qitem{ \Qq{Does the code require a rigid data structure?} (e.g. specific column names in data frame) \hskip0.4cm \\ \QO{}
 absolutely \hskip0.5cm \QO{} no, quite flexible}
-
-\Qitem{ \Qq{Is the code flexible?} (i.e allows inputs of different data types) \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Data can be retrieved without contacting the author?}  \hskip0.4cm \\
 \QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 
 \Qitem{\Qq{Code follows a logical structure?} \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{Analysis only includes relevant codes?} (no code or output which is not used afterwards) \hskip0.4cm \\ 
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{Are the derived variables self-explanatory?} (e.g. through clear variable names and/or comments) \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{A consistent documentation structure/naming convention is applied?} \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{\Qq{The analysis can be run easily on other data sets?}  (generic code) \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{Appropriate use of commands - no unnecessary complex code snippets?} \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{\Qq{If a function or command is provided: are example code/data provided/explained?} \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} yes for all \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Does the code minimize the storage of data?} (e.g. removal of unused variables) \\
-\Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+\Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no \hskip0.5cm \QO{} partly}}
 
-\Qitem{ \Qq{Does the code minimize the use of RAM?}(e.g. appropriate subsetting, no re-reading data) \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+\Qitem{ \Qq{Does the code minimize the use of RAM?} (e.g. appropriate subsetting, no re-reading data) \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no \hskip0.5cm \QO{} partly}}
 
-\Qitem{ \Qq{Data handling and transformation is coherent and well commented?} \Qtab{3cm}{yes \Qrating{5} no}}
+\Qitem{ \Qq{Data handling and transformation is coherent and well commented?} \\ \Qtab{3cm}{yes \Qrating{5} no \hskip0.5cm \QO{} partly}}
 
 \Qitem{ \Qq{Novel code not covered in the course is used?} \Qtab{3cm}{a lot \Qrating{5} just known commands}}
 
 \Qitem{ \Qq{The script is actually a package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
 
-\Qitem{ \Qq{Proper documentation (manual pages) is provided for this package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no}}
+\Qitem{ \Qq{Proper documentation (manual pages) is provided for this package?} \Qtab{3cm}{\QO{} yes \hskip0.5cm \QO{} no \hskip0.5cm \QO{} partly}}
 
 \Qitem{ \Qq{Analysis is fast (based on performance measures)} \Qtab{3cm}{yes \Qrating{5} no} \\
  \Qq{Which parts could be improved?} \Qlines{3} }
@@ -313,33 +314,33 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} \\
 
 \section*{Graphs and Maps}
 
-\Qitem{ \Qq{Graphs or Maps are providing key messages?} \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\Qitem{ \Qq{Graphs or Maps are providing key messages?} \hskip0.4cm \\ \QO{}
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Plots/Maps are are self-explanatory?} \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\Qitem{ \Qq{Plots/Maps are are self-explanatory?} \hskip0.4cm \\ \QO{}
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Plots/maps are informative?} \Qtab{3cm}{yes \Qrating{5} no}}
 
 \Qitem{ \Qq{Graphs include all necessary items? } (legend, axis title etc.) \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Plots/maps are not overloaded?} \Qtab{3cm}{yes, clean \Qrating{5} no, totally cluttered}}
 
 \Qitem{ \Qq{Plots/maps layout is consistent through-out the analysis?}  \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Plots/maps have appropriate colour scheme?}  \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\Qitem{ \Qq{Plots/maps have appropriate colour scheme?}  \hskip0.4cm \\ \QO{}
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Plots/maps have appropriate font size/type/orientation?}  \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\Qitem{ \Qq{Plots/maps have appropriate font size/type/orientation?}  \hskip0.4cm \\ \QO{}
+absolutely \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
-\Qitem{ \Qq{Maps have scale bars, legend, coordinates?}  \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\Qitem{ \Qq{Maps have scale bars, legend, coordinates?}  \hskip0.4cm \\ \QO{}
+yes, all \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Maps include landmarks, cities, roads for orientation?}  \hskip0.4cm \\
-\QO{} absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
+\QO{} yes \hskip0.5cm \QO{} partly \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 
 \Qitem{ \Qq{Please write what you (dis-)liked in the graphs/maps:} \Qlines{6} }
 
@@ -358,19 +359,19 @@ absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
 \minisec{Please evaluate the following parts}
 \vskip.5em
 
-\Qitem{ \Qq{Readability} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+\Qitem{ \Qq{Readability} \Qtab{3cm}{could be improved \Qrating{5} fantastic}}
 
-\Qitem{ \Qq{Information} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
+\Qitem{ \Qq{Information} \Qtab{3cm}{could be improved \Qrating{5} fantastic}}
 
-\Qitem{ \Qq{Structure} \Qtab{3cm}{horrible \Qrating{5}
+\Qitem{ \Qq{Structure} \Qtab{3cm}{could be improved \Qrating{5}
 fantastic}}
 
-\Qitem{ \Qq{Innovation} \Qtab{3cm}{horrible \Qrating{5}
+\Qitem{ \Qq{Innovation} \Qtab{3cm}{could be improved \Qrating{5}
 fantastic}}
 
 \bigskip
 
-\Qitem{ \Qq{Do you think it qualifies for being scientifically reproducible?}
+\Qitem{ \Qq{Do you think it qualifies for being reproducible?}
 \begin{Qlist}
 \item yes
 \item no
